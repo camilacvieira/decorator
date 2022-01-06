@@ -15,7 +15,7 @@ class EmpresaTest {
     void deveRetornarCargaHorariaEmpresaComLider() {
         Empresa empresa = new Lider(new EmpresaTI(1000.0f));
 
-        assertEquals(1100.0f, empresa.getCargaHoraria());
+        assertEquals(1050.0f, empresa.getCargaHoraria());
     }
 
 
@@ -23,14 +23,14 @@ class EmpresaTest {
     void deveRetornarEstruturaEmpresa() {
         Empresa empresa = new EmpresaTI();
 
-        assertEquals("Graduação", empresa.getEstrutura());
+        assertEquals("TI", empresa.getEstrutura());
     }
 
     @Test
-    void deveRetornarEstruturaCursoComLider() {
+    void deveRetornarEstruturaEmpresaComLider() {
         Empresa empresa = new Lider(new EmpresaTI());
 
-        assertEquals("Graduação/Estágio", empresa.getEstrutura());
+        assertEquals("TI/Lider", empresa.getEstrutura());
     }
 
 

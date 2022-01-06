@@ -5,4 +5,4 @@
         String getEstrutura();
 
     }
-}
+
